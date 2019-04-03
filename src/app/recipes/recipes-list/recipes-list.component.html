@@ -1,0 +1,17 @@
+<div
+  class="recipe-lists"
+  fxLayout="row"
+  fxLayoutGap="25px"
+  fxLayoutAlign="start center"
+  *ngFor="let recipes of recipe"
+>
+  <!-- for image we can also use property binding [src]={{recipes.imagePath}} -->
+
+  <img src="{{ recipes.imagePath }}" alt="recipes.name" srcset="" />
+  <div>
+    <h2>Recipe Name:{{ recipes.name }}</h2>
+    <p>Description:{{ recipes.description }}</p>
+  </div>
+</div>
+
+<app-recipe-item></app-recipe-item>
