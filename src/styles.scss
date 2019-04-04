@@ -357,10 +357,19 @@ template {
 }
 
 ul {
+  margin: 0;
+  padding: 0;
   li {
     list-style: none;
   }
 }
 a {
   text-decoration: none;
+}
+
+.lists {
+  li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+  }
 }
