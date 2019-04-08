@@ -1,4 +1,4 @@
-<app-header></app-header>
-<app-recipes></app-recipes>
+<app-header (navLinkRecipe)="onRecipes($event)"></app-header>
+<app-recipes *ngIf="linkId === 1"></app-recipes>
 
-<app-shopping-list></app-shopping-list>
+<app-shopping-list *ngIf="linkId !== 1"></app-shopping-list>
