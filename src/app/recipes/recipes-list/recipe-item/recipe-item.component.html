@@ -1,1 +1,14 @@
-<h1>Recipe Name</h1>
+<div
+  class="recipe-lists"
+  fxLayout="row"
+  fxLayoutGap="25px"
+  fxLayoutAlign="start center"
+>
+  <!-- for image we can also use property binding [src]={{recipes.imagePath}} -->
+
+  <img src="{{ recipeItem.imagePath }}" alt="recipeItem.name" srcset="" />
+  <div>
+    <h2>Recipe Name:{{ recipeItem.name }}</h2>
+    <p>Description:{{ recipeItem.description }}</p>
+  </div>
+</div>
