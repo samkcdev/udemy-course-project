@@ -1,5 +1,10 @@
 .recipe-lists {
-  margin-bottom: 25px;
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+  .recipe-lists-content {
+    background: #ccc;
+    padding: 10px;
+  }
 }
 
 img {

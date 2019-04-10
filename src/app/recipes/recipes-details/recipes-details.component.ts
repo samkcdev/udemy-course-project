@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from "@angular/core";
+import { Recipe } from "../recipe-model";
 
 @Component({
-  selector: 'app-recipes-details',
-  templateUrl: './recipes-details.component.html',
-  styleUrls: ['./recipes-details.component.scss']
+  selector: "app-recipes-details",
+  templateUrl: "./recipes-details.component.html",
+  styleUrls: ["./recipes-details.component.scss"]
 })
 export class RecipesDetailsComponent implements OnInit {
+  @Input() fromRecipes: Recipe;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

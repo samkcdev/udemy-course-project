@@ -1,4 +1,7 @@
-<h1>Recipe Name</h1>
+<h1>{{ fromRecipes.name }}</h1>
+<div class="recipe-details-img">
+  <img src="{{ fromRecipes.imagePath }}" alt="" />
+</div>
 <div fxLayout="row" fxLayoutGap="15px">
   <button>Add Ingredients</button>
   <button>Edit</button>
@@ -6,12 +9,9 @@
 </div>
 
 <div>
-  <h2>Description</h2>
+  <h2>Description:</h2>
   <p>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique,
-    officiis quis. Labore, ullam quos magnam voluptatibus voluptatem vel
-    praesentium odio incidunt ipsum reiciendis obcaecati soluta ex, nihil nam.
-    Reiciendis, corporis!
+    {{ fromRecipes.description }}
   </p>
 </div>
 <div>

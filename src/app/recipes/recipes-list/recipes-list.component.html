@@ -1,4 +1,5 @@
 <app-recipe-item
   *ngFor="let recipes of recipe"
   [recipeItem]="recipes"
+  (recipeDetailView)="showMeDetails(recipes)"
 ></app-recipe-item>

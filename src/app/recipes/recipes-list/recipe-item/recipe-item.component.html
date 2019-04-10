@@ -1,14 +1,15 @@
 <div
   class="recipe-lists"
   fxLayout="row"
-  fxLayoutGap="25px"
+  fxLayoutGap="15px"
   fxLayoutAlign="start center"
 >
   <!-- for image we can also use property binding [src]={{recipes.imagePath}} -->
 
   <img src="{{ recipeItem.imagePath }}" alt="recipeItem.name" srcset="" />
-  <div>
+  <div fxFlex="1 1 0" class="recipe-lists-content">
     <h2>Recipe Name:{{ recipeItem.name }}</h2>
     <p>Description:{{ recipeItem.description }}</p>
+    <button (click)="onDetails()">View Details</button>
   </div>
 </div>

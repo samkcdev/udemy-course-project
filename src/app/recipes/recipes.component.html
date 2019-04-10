@@ -1,8 +1,22 @@
-<div fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="10px">
-  <div>
-    <app-recipes-list></app-recipes-list>
+<div
+  fxLayout="row wrap"
+  fxLayoutAlign="start start"
+  fxLayoutGap="20px"
+  fxLayout.md="column"
+  fxLayout.xs="column"
+>
+  <div fxFlex="4 1 0">
+    <app-recipes-list
+      (selectedRecipes)="showDetails($event)"
+    ></app-recipes-list>
   </div>
-  <div>
-    <app-recipes-details></app-recipes-details>
+  <div fxFlex="8 1 0">
+    <app-recipes-details
+      *ngIf="detailStorage; else noContent"
+      [fromRecipes]="detailStorage"
+    ></app-recipes-details>
+    <ng-template #noContent>
+      <p>Please click view details to shown content</p>
+    </ng-template>
   </div>
 </div>
