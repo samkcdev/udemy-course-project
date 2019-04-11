@@ -1,6 +1,7 @@
-<app-shopping-edit></app-shopping-edit>
-<ul *ngFor="let ingredient of ingredients" class="lists">
-  <li>
+<app-shopping-edit (addingIngredients)="shoppingList($event)">
+</app-shopping-edit>
+<ul>
+  <li *ngFor="let ingredient of ingredients" class="lists">
     <a href="#">{{ ingredient.name }} ({{ ingredient.amount }})</a>
   </li>
 </ul>

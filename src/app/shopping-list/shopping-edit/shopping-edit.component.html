@@ -4,14 +4,14 @@
   <form action="">
     <div fxLayout="row" fxLayoutGap="15px">
       <label for="">Name</label>
-      <input type="text" />
+      <input #ingredientNameInput type="text" />
 
       <label for="">Amount</label>
-      <input type="text" />
+      <input #amountInput type="text" />
     </div>
 
     <div class="action-btns" fxLayout="row" fxLayoutGap="15px">
-      <button>Add</button>
+      <button (click)="addIngredient()">Add</button>
       <button>Delete</button>
       <button>Clear</button>
     </div>
