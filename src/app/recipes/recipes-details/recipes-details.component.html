@@ -1,19 +1,21 @@
-<h1>{{ fromRecipes.name }}</h1>
-<div class="recipe-details-img">
-  <img src="{{ fromRecipes.imagePath }}" alt="" />
-</div>
-<div fxLayout="row" fxLayoutGap="15px">
-  <button>Add Ingredients</button>
-  <button>Edit</button>
-  <button>Add</button>
-</div>
+<div class="mat-elevation-z2" style="padding:1em;width:60%">
+  <h1>{{ fromRecipes.name }}</h1>
+  <div class="recipe-details-img">
+    <img src="{{ fromRecipes.imagePath }}" alt="" />
+  </div>
+  <div fxLayout="row" fxLayoutGap="15px">
+    <button>Add Ingredients</button>
+    <button>Edit</button>
+    <button>Add</button>
+  </div>
 
-<div>
-  <h2>Description:</h2>
-  <p>
-    {{ fromRecipes.description }}
-  </p>
-</div>
-<div>
-  <h3>Ingredients</h3>
+  <div>
+    <h2>Description:</h2>
+    <p>
+      {{ fromRecipes.description }}
+    </p>
+  </div>
+  <div>
+    <h3>Ingredients</h3>
+  </div>
 </div>

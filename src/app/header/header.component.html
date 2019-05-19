@@ -1,11 +1,18 @@
-<header fxLayout="row" fxLayoutGap="15px">
-  <div class="brand">
-    Recipe Book
-  </div>
-  <nav>
-    <ul fxLayout="row" fxLayoutGap="15px">
-      <li><a href="#" (click)="openRecipes(1)">Recipes</a></li>
-      <li><a href="#" (click)="openShoppingList(2)">Shopping List</a></li>
-    </ul>
-  </nav>
+<header>
+  <mat-toolbar
+    fxLayout="row"
+    fxLayoutGap="15px"
+    fxLayoutAlign="start center"
+    color="primary"
+  >
+    <div class="brand">
+      Recipe Book
+    </div>
+    <nav>
+      <ul fxLayout="row" fxLayoutGap="15px">
+        <li><a href="#" (click)="openRecipes(1)">Recipes</a></li>
+        <li><a href="#" (click)="openShoppingList(2)">Shopping List</a></li>
+      </ul>
+    </nav>
+  </mat-toolbar>
 </header>
