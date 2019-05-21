@@ -13,6 +13,7 @@ import { FormsModule } from "@angular/forms";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatButtonModule } from "@angular/material/button";
+import { ShoppingListService } from "./shopping-list/shoppinglist.service";
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +33,7 @@ import { MatButtonModule } from "@angular/material/button";
     MatToolbarModule,
     MatButtonModule
   ],
-  providers: [],
+  providers: [ShoppingListService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
